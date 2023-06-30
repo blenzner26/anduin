@@ -9,4 +9,4 @@ The first is a web application that contains digital scans of all of the manuscr
 
 ## Exhibit
 The second part of this project is an interactive application developed for a related museum exhibition that took place while Anduin was under development. This was created using React.js.
-Demo: [https://main.dmh8nuuovinq3.amplifyapp.com/](https://main.dmh8nuuovinq3.amplifyapp.com/)
+**Demo:** [https://main.dmh8nuuovinq3.amplifyapp.com/](https://main.dmh8nuuovinq3.amplifyapp.com/)
