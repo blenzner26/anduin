@@ -1,6 +1,6 @@
 # Tolkien Exhibit App
 
-React.js app designed for upcoming exhibit that allows users to see where a passage appears in various versions of the original manuscripts and allows a comparison between different versions of the manuscript drafts.
+React.js app designed for exhibit that allows users to see where a passage appears in various versions of the original manuscripts and allows a comparison between different versions of the manuscript drafts.
 
 ## Dependencies
 
