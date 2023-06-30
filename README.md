@@ -4,3 +4,6 @@ This project contains two parts. The first is a web application that contains di
 
 # Exhibit
 The second part of this project is an interactive application developed for a related museum exhibition that took place while Anduin was under development. This was created using React.js.
+Demo: [https://main.dmh8nuuovinq3.amplifyapp.com/](https://main.dmh8nuuovinq3.amplifyapp.com/)
+
+Note: manuscript images have been removed due to copyright
