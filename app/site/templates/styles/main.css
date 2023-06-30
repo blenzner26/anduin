@@ -1,0 +1,886 @@
+@charset "utf-8";
+@import url("fonts/cormorant_infant/cormorant_infant.css");
+@import url("fonts/avenir_next/avenir_next.css");
+@import url("fonts/cormorant_unicase/cormorant_unicase.css");
+@import url("fonts/cormorant_sc/cormorant_sc.css");
+@import url("fonts/cormorant_garamond/cormorant_garamond.css");
+@import url("fonts/sf_pro_display/sf_pro_display.css");
+@import url("sanitize/sanitize.css");
+@import url("sanitize/forms.css");
+@import url("sanitize/assets.css");
+@import url("sanitize/typography.css");
+@import url("sanitize/reduce-motion.css");
+@import url("sanitize/system-ui.css");
+@import url("sanitize/ui-monospace.css");
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+	--serifFont: "Cormorant Infant", Cormorant, Garamond, "EB Garamond", "Big Caslon", Baskerville, Times, "Times New Roman", serif;
+	--sansFont: "Avenir Next", "Trebuchet MS", Futura, Avenir, Helvetica, Arial, Tahoma, Verdana, sans-serif;
+	--uniFont: "Cormorant Unicase", "Cormorant Infant", Palatino, Charter, serif;
+	--scFont: "Cormorant SC", "Cormorant Unicase", "Cormorant Infant", "Bodoni 72 Smallcaps", Cochin, Palatino, serif;
+	--numFont: "Cormorant Garamond", "Cormorant Infant", "Cormorant SC", "Cormorant Unicase", Garamond, "EB Garamond", Palatino, serif;
+	--utilFont: "SF Pro Display";
+
+/* COLOR variables */
+
+/*	Accent2: hovered external links, … */
+	--cAcc2:   hsl(0, 100%, 23%);
+	--cAcc20: hsla(0, 100%, 23%, 0.0);
+	--cAcc21: hsla(0, 100%, 23%, 0.1);
+	--cAcc25: hsla(0, 100%, 23%, 0.5);
+
+/*	JRRT (J.R.R. Tolkien) — now a family: page, passage */
+	--cJRRT:   hsl(0, 100%, 28%);
+	--cJRRT0: hsla(0, 100%, 28%, 0.0);
+	--cJRRT1: hsla(0, 100%, 28%, 0.1);
+	--cJRRT5: hsla(0, 100%, 28%, 0.5);
+
+/*	JRRT: pages */
+	--cPage:   hsl(0, 100%, 28%);
+	--cPage0: hsla(0, 100%, 28%, 0.0);
+	--cPage1: hsla(0, 100%, 28%, 0.1);
+	--cPage5: hsla(0, 100%, 28%, 0.5);
+
+/*	JRRT: passages */
+	--cPass:   hsl(0, 100%, 28%);
+	--cPass0: hsla(0, 100%, 28%, 0.0);
+	--cPass1: hsla(0, 100%, 28%, 0.1);
+	--cPass5: hsla(0, 100%, 28%, 0.5);
+
+/*	Citations, including drafts, chapters, sections, & works */
+	--cCit:   hsl(0, 100%, 28%);
+	--cCit0: hsla(0, 100%, 28%, 0.0);
+	--cCit1: hsla(0, 100%, 28%, 0.1);
+	--cCit5: hsla(0, 100%, 28%, 0.5);
+
+/*	Cream: page background if image doesn’t load */
+	--cream: hsl(45, 38%, 94%);
+
+/*	Metadata */
+	--cMD:   hsl(45, 100%, 14%);
+	--cMD0: hsla(45, 100%, 14%, 0.0);
+	--cMD1: hsla(45, 100%, 14%, 0.1);
+	--cMD5: hsla(45, 100%, 14%, 0.5);
+
+/*	Espresso: unmarked default chrome & text */
+	--cDefault:   hsl(45, 100%, 14%);
+	--cDefault0: hsla(45, 100%, 14%, 0.0);
+	--cDefault1: hsla(45, 100%, 14%, 0.1);
+	--cDefault5: hsla(45, 100%, 14%, 0.5);
+
+/*	Transcriptions */
+	--cXpt:   hsl(78, 100%, 28%);
+	--cXpt0: hsla(78, 100%, 28%, 0.0);
+	--cXpt1: hsla(78, 100%, 28%, 0.1);
+	--cXpt5: hsla(78, 100%, 28%, 0.5);
+
+/*  Comments */
+	--cComm:   hsl(78, 100%, 22%);
+	--cComm0: hsla(78, 100%, 22%, 0.0);
+	--cComm1: hsla(78, 100%, 22%, 0.1);
+	--cComm5: hsla(78, 100%, 22%, 0.5);
+
+/*	Christopher Tolkien */
+	--cCT:   hsl(180, 100%, 24%);
+	--cCT0: hsla(180, 100%, 24%, 0.0);
+	--cCT1: hsla(180, 100%, 24%, 0.1);
+	--cCT5: hsla(180, 100%, 24%, 0.5);
+
+/*	Shelfmarks — now a family: series, subseries, box, folder */
+	--cSM:   hsl(208, 90%, 29%);
+	--cSM0: hsla(208, 90%, 29%, 0.0);
+	--cSM1: hsla(208, 90%, 29%, 0.1);
+	--cSM5: hsla(208, 90%, 29%, 0.5);
+
+/*	Accent1: header & footer text and lines, … */
+	--cAcc1:   hsl(208, 90%, 29%);
+	--cAcc10: hsla(208, 90%, 29%, 0.0);
+	--cAcc11: hsla(208, 90%, 29%, 0.1);
+	--cAcc15: hsla(208, 90%, 29%, 0.5);
+
+/*	Main flow */
+	--cMF:   hsl(240, 32%, 41%);
+	--cMF0: hsla(240, 30%, 41%, 0.0);
+	--cMF1: hsla(240, 30%, 41%, 0.1);
+	--cMF5: hsla(240, 30%, 41%, 0.5);
+
+/*	Tags */
+	--cTag:   hsl(328, 100%, 24%);
+	--cTag0: hsla(328, 100%, 24%, 0.0);
+	--cTag1: hsla(328, 100%, 24%, 0.1);
+	--cTag5: hsla(328, 100%, 24%, 0.5);
+
+	background-image: url(noisytexture.png);
+	background-repeat: repeat;
+	background-color: var(--cream);
+	background-size: 150px;
+	color: var(--cDefault);
+	font-family: var(--serifFont);
+	line-height: 1.4;
+	font-size: 133%;
+	min-height: 100%;
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+body {
+	width: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	display: grid;
+	column-gap: 0;
+	grid-template:
+		"paneTop"
+		"Pane1"
+		"Boot";
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration-thickness: .03em;
+	text-decoration-color: rgba(0,0,0,0.25);
+	text-underline-offset: 1.5px;
+	color: inherit;
+}
+
+a:hover {
+	color: var(--cAcc2);
+	text-decoration-color: var(--cAcc2);
+	background-color: rgba(0,0,0,0.05);
+	outline-color: rgba(0,0,0,0.05);
+	outline-width: 0.1em;
+	outline-style: solid;
+}
+
+nav {
+	padding-top: 1ex;
+}
+
+div#tcNav {
+	clear: both;
+	position: relative;
+	box-sizing: content-box;
+	z-index: 1;
+}
+
+div#vsHeader {
+	grid-area: paneTop;
+	vertical-align: bottom;
+	padding-top: 0.5em;
+	margin-bottom: -1.075em;
+	width: 100%;
+	color: var(--cAcc1);
+}
+
+sub, sup {
+	vertical-align: baseline;
+	position: relative;
+	font-size: 70%;  /* 70% size of its parent element font-size which is good. */
+}
+
+sub {
+	bottom: -0.45em; /* use em becasue they adapt to parent font-size */
+}
+
+sup {
+	top: -0.45em;  /* use em becasue they adapt to parent font-size */
+}
+
+#Pane1 {
+	overflow: wrap;
+	margin: 0;
+	padding: 0;
+	display: block;
+	grid-template-rows: max-content;
+}
+
+#Pane1 {
+	grid-area: Pane1;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+img.scan {
+	max-height: 540px;
+	height: 540px;
+	min-height: 540px;
+	object-fit: contain;
+	box-shadow: inset 0 -3em 3em var(--cDefault1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.navbar {  /* Navbar container */
+	overflow: hidden;
+	width: 100%;
+	background-image: url(noisytexture.png);
+	background-repeat: repeat;
+	background-color: var(--cream);
+	background-size: 150px;
+	font-family: var(--sansFont);
+	font-size: 80%;
+}
+
+div.alignedList {
+	font-family: var(--serifFont);
+	font-size: 85%;
+	width: 100%;
+	margin: 1ex 0 0 0;
+}
+
+div.alignedList dl.midAlign dt {
+	font-family: var(--numFont);
+	font-variant-numeric: oldstyle-nums proportional-nums slashed-zero;
+	width: 5.0em;
+}
+
+div.alignedList dl.midAlign dt.sc {
+	font-family: var(--scFont) !important;
+	text-transform: lowercase;
+}
+
+dl.midAlign {
+	margin: 0;
+	padding: 0;
+}
+
+dl.midAlign dt {
+	font-family: inherit;
+	font-weight: inherit;
+	padding: 0 0.5em 0 0;
+	width: 2.0em;
+}
+
+dl.midAlign dt::after { content: ". "; }
+dl.midAlign dd { margin-inline-start: 1.5em; }
+.nav { overflow: hidden; }
+
+/* Links inside the navbar */
+.nav a { text-align: center; }
+
+/* The dropdown container */
+.ddNavMenu {
+	float: left;
+	overflow: hidden;
+}
+
+/* Dropdown button */
+.ddNavMenu .ddNavBtn {
+	border: none;
+	outline: none;
+	padding: 0 0 .67ex 0;
+	background-color: inherit;
+	font-family: inherit;
+	/* Important for vertical align on mobile phones */
+	margin: 0 1em 0 0;
+	/* Important for vertical align on mobile phones */
+}
+
+.ddNavBtn:before {
+	content: "􀯪";
+	font-family: var(--utilFont);
+	font-weight: 400;
+	font-size: 50%;
+	padding-right: 0.8em;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.ddNavBtn:hover {
+	color: var(--cAcc2);
+	text-decoration-color: var(--cAcc2);
+	background-color: rgba(0,0,0,0.05);
+	outline-color: rgba(0,0,0,0.05);
+	outline-width: 0.1em;
+	outline-style: solid;
+}
+
+/* Dropdown content (hidden by default) */
+.ddNavContent {
+	font-size: 70%;
+	display: none;
+	position: absolute;
+	box-sizing: content-box;
+	margin-top: -0.8em;
+	padding: 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.ddNavContent a {
+	background-image: url(noisytexture.png);
+	background-repeat: repeat;
+	background-color: var(--cream);
+	background-size: 150px;
+	float: none;
+	color: var(--cDefault);
+	font-family: var(--sansFont);
+	font-size: 90%;
+	font-weight: 500;
+	padding: 0.5ex 2em 0.5ex 1em;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	line-height: 1.3;
+	font-variant-numeric: tabular-nums oldstyle-nums;
+}
+
+.breadCrumb { font-size: 85%; }
+
+/* Add a grey background color to dropdown links on hover */
+.ddNavContent a:hover { background-color: #ddd; }
+
+/* Show the dropdown menu on hover */
+.ddNavMenu:hover .ddNavContent { display: block; }
+
+hr {
+	display: block;
+	clear: both;
+	max-width: 100%;
+	height: 1px;
+	border: 0;
+	border-top: 0.5px solid var(--cDefault);
+	margin: 1em 0;
+	padding: 0;
+}
+
+hr.inter {
+	width: 50%;
+	margin-left: 25%;
+}
+
+.card {
+	clear: none;
+	width: 100%;
+	max-width: 1340px;
+	padding: 0 0.5em 1.5ex 0.5em;
+	border-width: 0;
+	border-left: 10px solid;
+	outline: none;
+	box-shadow: rgb(0 0 0 / 10%) 1px 1px 6px 0px;
+}
+
+.card.cit {
+	border-image: linear-gradient(to right, var(--cCit5), var(--cCit0)) 0 100%;
+	box-shadow: var(--cCit1) 1px 1px 6px 0px;
+}
+
+.card.comments {
+	border-image: linear-gradient(to right, var(--cComm5), var(--cComm0)) 0 100%;
+	box-shadow: var(--cComm1) 1px 1px 6px 0px;
+}
+
+.card.legend {
+	border-image: linear-gradient(to right, var(--cDefault5), var(--cDefault0)) 0 100%;
+	box-shadow: var(--cDefault1) 1px 1px 6px 0px;
+}
+
+.card.md {
+	border-image: linear-gradient(to right, var(--cMD5), var(--cMD0)) 0 100%;
+	box-shadow: var(--cMD1) 1px 1px 6px 0px;
+}
+
+.card.mf {
+	border-image: linear-gradient(to right, var(--cMF5), var(--cMF0)) 0 100%;
+	box-shadow: var(--cMF1) 1px 1px 6px 0px;
+}
+
+.card.page {
+	border-image: linear-gradient(to right, var(--cPage5), var(--cPage0)) 0 100%;
+	box-shadow: var(--cPage1) 1px 1px 6px 0px;
+}
+
+.card.parent {
+	border-image: linear-gradient(to right, var(--cDefault5), var(--cDefault0)) 0 100%;
+	box-shadow: var(--cDefault1) 1px 1px 6px 0px;
+}
+
+.card.pass {
+	border-image: linear-gradient(to right, var(--cPass5), var(--cPass0)) 0 100%;
+	box-shadow: var(--cPass1) 1px 1px 6px 0px;
+}
+
+.card.shelfmark, .card.sm {
+	border-image: linear-gradient(to right, var(--cSM5), var(--cSM0)) 0 100%;
+	box-shadow: var(--cSM1) 1px 1px 6px 0px;
+}
+
+.card h2::before {
+	display: inline-block;
+	width: 1em;
+	font-size: 67%;
+}
+
+div.hidden span.htmx::before {
+	content: "⏵";
+	font-size: 67%;
+	padding-right: 0.67em;
+	cursor: zoom-in;
+}
+
+div.shown span.htmx::before {
+	content: "⏷";
+	font-size: 67%;
+	padding-right: 0.67em;
+	cursor: zoom-out;
+}
+
+div.stat h2::before {
+	content: "∿";
+	font-size: 67%;
+	padding-right: 0.67em;
+}
+
+div.hidden span.htmx:hover { cursor: zoom-in; }
+div.shown span.htmx:hover { cursor: zoom-out; }
+
+.headerText {
+	padding-top: 0.58em;
+	display: inline-block;
+}
+
+h1.header {
+	margin-block: 0;
+	vertical-align: bottom;
+	font-family: var(--scFont);
+	text-transform: lowercase;
+	font-variant-numeric: slashed-zero;
+}
+
+hr.header {
+	margin-top: -1.2ex;
+	border-color: var(--cAcc1);
+	max-width: 100%;
+}
+
+hr.footer {
+	border-color: var(--cAcc1);
+	width: 100%;
+	margin: 0;
+	max-width: 100%;
+	padding-bottom: 1ex;
+	clear: both;
+}
+
+li.pass a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#Boot {
+	grid-area: Boot;
+	width: 100%;
+	max-width: 100%;
+	font-family: var(--sansFont);
+	font-weight: 400;
+	padding: 0;
+	color: var(--cAcc1);
+	font-size: 57.6%;
+}
+
+#Boot div.left {
+	padding-left: 1vw;
+}
+
+@keyframes FadeIn {
+  from {
+	opacity: 0;
+  }
+  
+  to {
+	opacity: 1;
+  }
+}
+
+td {
+	white-space: nowrap;
+}
+
+table.labels {
+	padding-left: 2em;
+	margin-top: 1ex;
+	border-spacing: 0.67em 0.1em;
+	width: 100%;
+}
+
+table.labels th, table.labels td {
+	font-size: 75%;
+	font-weight: 400;
+	vertical-align: top;
+	min-width: 7em;
+	text-align: left;
+	font-family: var(--sansFont);
+}
+
+table.labels th { color: var(--cMD); }
+table.labels th { border-bottom: 0.2px var(--cMD) solid; }
+
+table.labels td.content {
+	font-family: var(--serifFont);
+	font-size: 85%;
+}
+
+ul {
+	margin: 0;
+	padding: 1ex 1em 0 4em;
+	font-size: 75%;
+	font-weight: 400;
+	font-family: var(--sansFont);
+	list-style: none;
+}
+
+.note {
+	font-size: 67%;
+	font-weight: 400;
+	font-family: var(--sansFont);
+}
+
+.small { font-size: 85%; }
+.smaller { font-size: 75%; }
+.smallerer { font-size: 67%; }
+
+ul li::before {
+	content: "⟡";
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+h1 {
+	font-size: 115%;
+	font-weight: 400;
+	font-variant-numeric: oldstyle-nums;
+	font-family: var(--uniFont);
+}
+
+h2 { clear: none; }
+
+h2, .h2 {
+	font-size: 115%;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 0;
+	padding-top: 1ex;
+}
+
+h2.comm { padding-bottom: 1ex; }
+
+h3 {
+	font-family: var(--uniFont);
+	margin: 0;
+	padding: 2ex 0 0 2em;
+	font-size: 90%;
+	font-weight: 500;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.sc {
+	font-family: var(--scFont);
+	text-transform: lowercase;
+	font-variant-numeric: slashed-zero;
+}
+
+.semibold {
+	font-weight: 600;
+}
+
+.uni {
+	font-family: var(--uniFont);
+	font-variant-caps: petite-caps;
+	font-variant-numeric: oldstyle-nums proportional-nums slashed-zero;
+	font-size: 95%;
+}
+
+.num {
+	font-family: var(--sansFont);
+	font-variant-numeric: oldstyle-nums proportional-nums slashed-zero;
+	font-size: 83%;
+
+}
+
+dl {
+	padding: 0;
+	width: 100%;
+}
+
+dt {
+	float: left;
+	clear: left;
+	width: 6em;
+	text-align: right;
+	font-weight: bold;
+}
+
+dt::after { content: ": "; }
+dd { margin: 0 0 0 7em; }
+.indent { padding-left: 2em; }
+table.nav * { white-space: nowrap; }
+
+table.nav td {
+	vertical-align: top;
+	padding: 0 0.7em;
+	text-align: left;
+}
+
+td p { margin: 0; }
+
+.left {
+	display: inline-block;
+	float: left;
+	width: auto;
+}
+
+.right {
+	display: inline-block;
+	float: right;
+	width: auto;
+}
+
+.fullLeft {
+	display: inline-block;
+	float: left;
+	clear: left;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-block: 0 1ex;
+}
+
+.fullRight {
+	display: inline-block;
+	float: right;
+	clear: right;
+	text-align: right;
+	padding: 0 2em 0 0;
+	margin: 0;
+	margin-block: 0 1ex;
+}
+
+#commentButtonContainer {
+	text-align: left;
+}
+
+/* Comments */
+#commentDiv { margin-left: 25px; }
+
+#commentModal .modal-header, #commentModal .modal-body, #commentModal .modal-footer {
+	background-color: #FEF8EF;
+	background-repeat: repeat;
+	background-image: url(noisytexture.png);
+}
+
+#Pane1 *.navPlusPanel, #Pane1 *.listingsPanel {
+	margin: 0;
+	padding: 1vh 1vw;
+}
+
+.imagePanel {
+	text-align: center;
+	opacity: 0;
+	animation-name: FadeIn;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	display: block;
+	float: right;
+	padding-left: 2em;
+	padding-right: 1em;
+}
+
+.tp { width: 1.5vw; }
+.tp1 {float: left; }
+.tp2 {float: right; }
+
+.mb {
+	height: auto;
+}
+
+#theScan {
+	clear: both;
+}
+
+button.pane, label.pane {
+	float: right;
+	display: block: clear: none;
+	border: none;
+	mix-blend-mode: multiply;
+	width: 100%;
+}
+
+#commentModal .modal-body {
+	border-bottom-left-radius: calc(0.3rem - 1px);
+	border-bottom-right-radius: calc(0.3rem - 1px);
+}
+
+#tcComms button, #tcComms [type="button"], #tcComms [type="submit"] {
+	appearance: button;
+	display: inline-block;
+	margin: 1ex 0;
+	padding: 0.67ex 1em;
+	font-family: system-ui;
+	font-size: 85%;
+	text-shadow: rgba(255, 255, 255, 0.4) 1px 1px;
+	border: 1.33px solid rgba(0, 0, 0, 0.6);
+	border-radius: 3px;
+	background: linear-gradient(#fbfcfb, #9d9e9d);
+	background-color: #c0c2c0;
+	box-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+	user-select: none;
+	cursor: default;
+}
+
+#tcComms button:hover, #tcComms [type="button"]:hover, #tcComms [type="submit"]:hover { cursor: pointer !important; }
+.comFormBtns { float: right; }
+
+h5.commentInfo {
+	font-weight: 500;
+	margin: 0;
+	padding: 1ex 0 0 0;
+	font-family: var(--sansFont);
+	font-size: 67%;
+}
+
+.commentText {
+	margin: 0;
+	padding: 0.33ex 1.5em;
+	font-size: 85%;
+	font-family: var(--serifFont);
+}
+
+/* Image popup/viewer styles */
+#imageModal .modal-dialog { max-width: 95%; }
+
+#imageModal .modal-body {
+	overflow: hidden;
+	background: #000000;
+}
+
+#manuscript-cont { z-index: -1; }
+
+#imageModal #manuscript {
+	height: 88vh;
+	position: relative;
+	box-sizing: content-box;
+	cursor: move;
+}
+
+.openseadragon-canvas { background: #000000; }
+#toolbar { z-index: 1000; }
+
+.modal-close-btn#closeBtn {
+	position: fixed;
+	width: 30px;
+	left: calc(100vw - 130px);
+	z-index: 10000;
+	padding: 5px;
+	background: #00000088;
+}
+
+/* Places backdrop behind the popup */
+.modal-backdrop{
+	z-index: 1040 !important;
+}
+.modal-content{
+	z-index: 1100 !important;
+}
+
+@media screen and (max-width: 680px) {
+	.modal-close-btn#closeBtn { left: calc(100vw - 80px); }
+}
+
+#manuscript > #toolbar > div > div > div > div > div:nth-child(4){
+	display: none !important; /* temporarily hide full screen button */
+}
+
+/* 2022-07-08 • ErikMH for Anduin 0.7.1 - Added new logo */
+.logo {
+	width: 6em;
+	height: auto;
+	float: left;
+	padding: 0;
+	margin: 0 0 0 0.5em;
+}
+
+.diamond {
+	height: 1.2em;
+	width: auto;
+	float: left;
+	padding: 0.88em 0 0 0;
+	margin: .08em 0.5em 0 0.5em;
+}
+
+.heavy {
+	font-weight: 700 !important;
+}
+
+.prev, .next {
+	font-weight: 200 !important;
+	font-size: 80%;
+	text-decoration: none !important;
+}
+
+.prev:after {
+	content: "☜";
+	padding-right: 1.5em;
+	padding-left: 1ex;
+}
+
+.next:before {
+	content: "☞";
+	padding-left: 1.5em;
+	padding-right: 1ex;
+}
+
+a span.prev, a span.next {
+	padding: 0 0.5em;
+}
+
+span.util {
+	font-family: var(--utilFont);
+	font-weight: 400;
+	font-size: 50%;
+}
+
+.cit { color: var(--cCit); }
+.cit .disabled { color: var(--cCit5); }
+.cit .ddNavMenu .ddNavBtn { color: var(--cCit); }
+.cit .ddNavContent a { color: var(--cCit); }
+.cit .ddNavContent a:hover { background-color: #D1D2ED; }
+
+.comm { color: var(--cComm); }
+.ct { color: var(--cCT); }
+.default { color: var(--cDefault); }
+.hybrid { color: var(--cTag); }
+.jrrt { color: var(--cJRRT); }
+
+.md { color: var(--cMD); }
+.md .disabled { color: var(--cMD5); }
+
+.mf { color: var(--cMF); }
+.mf .disabled { color: var(--cMF5); }
+
+.page { color: var(--cPage); }
+.page .disabled { color: var(--cPage5); }
+
+.parent .disabled { color: var(--cDefault5); }
+
+.pass { color: var(--cPass); }
+.pass .disabled { color: var(--cPass5); }
+
+.sm { color: var(--cSM); }
+.sm .disabled { color: var(--cSM5); }
+.sm .ddNavMenu .ddNavBtn { color: var(--cSM); }
+.sm .ddNavContent a { color: var(--cSM); }
+.sm .ddNavContent a:hover { background-color: #D5D9B8; }

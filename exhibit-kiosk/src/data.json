@@ -1,0 +1,568 @@
+{
+    "passages": [{
+            "id": "1001",
+            "phrase": "\"I will take the Ring,' he said, 'though I do not know the way.\"",
+            "character": "Frodo",
+            "page": "270",
+            "description": "At the Council of Elrond, in what may be the most important line in The Lord of the Rings, Frodo Baggins chooses to bear the One Ring to Mordor, causing wise Elrond to declare, “This is the hour of the Shire-folk, when they arise from their quiet fields to shake the towers and counsels of the Great.”",
+            "images": [{
+                    "image_id": "101",
+                    "description": "Handwritten plot sketch",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "102",
+                    "description": "First handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "103",
+                    "description": "Second handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "104",
+                    "description": "First typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "105",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "106",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1002",
+            "phrase": "\"All we have to decide is what to do with the time that is given us.\"",
+            "character": "Gandalf",
+            "page": "51",
+            "description": "When he learns of the approaching Shadow, Frodo Baggins wishes it had not happened in his time, leading the Wizard Gandalf to voice these memorable words.",
+            "images": [{
+                    "image_id": "201",
+                    "description": "Early handwritten draft (line not yet present)",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "202",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "203",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "204",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "205",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "206",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1003",
+            "phrase": "\"But no living man am I! You look upon a woman.\"",
+            "character": "Éowyn",
+            "page": "841",
+            "description": "Éowyn's battle with the Lord of the Nazgûl on the Pelennor Fields is one of the most dramatic scenes in The Lord of the Rings. The Shieldmaiden of Rohan kills her foe in defense of her fallen uncle, Théoden, King of the Mark.",
+            "images": [{
+                    "image_id": "301",
+                    "description": "Earliest handwritten draft (line not yet present)",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "302",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "303",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "304",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "305",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "306",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1004",
+            "phrase": "\"The world is indeed full of peril, and in it are many dark places; but still there is much that is fair, and though in all lands love is now mingled with grief, it grows perhaps the greater.\"",
+            "character": "Haldir",
+            "page": "349",
+            "description": "The Elf Haldir offers these words of encouragement and consolation to Merry the Hobbit as the Fellowship journeys through fair Lothlórien.",
+            "images": [{
+                    "image_id": "401",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "402",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "403",
+                    "description": "Typewritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "404",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "405",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1005",
+            "phrase": "\"All that is gold does not glitter,\nNot all those who wander are lost;\"",
+            "character": "Gandalf in a letter (Bilbo's composition)",
+            "page": "170, 247",
+            "description": "Appearing twice in The Lord of the Rings—in the chapters “Strider” and “The Council of Elrond”—these words come from a rhyme Bilbo Baggins composed for his friend Aragorn, the Dúnadan. The phrase “Not all those who wander are lost” has become very popular in recent years, but do most of its admirers know the source?",
+            "images": [{
+                    "image_id": "501",
+                    "description": "Earliest handwritten draft (line not present yet)",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "502",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "503",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "504",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "505",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "506",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1006",
+            "phrase": "\"I do not love the bright sword for its sharpness, nor the arrow for its swiftness, nor the warrior for his glory. I love only that which they defend: the city of the Men of Númenor.\"",
+            "character": "Faramir",
+            "page": "672",
+            "description": "Faramir expresses the spirit of a true Númenórean with these stirring words spoken to Frodo and Sam during their respite at Henneth Annûn in Ithilien. It is remarkable how closely the earliest drafting of this scene follows the published text.",
+            "images": [{
+                    "image_id": "601",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "602",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "603",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "604",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "605",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1007",
+            "phrase": "\"For like a shaft, clear and cold, the thought pierced him that in the end the Shadow was only a small and passing thing; there was light and high beauty for ever beyond its reach.\"",
+            "character": "Narrator",
+            "page": "922",
+            "description": "When Frodo and Sam rest for the night during their arduous trek through Mordor, Sam’s hope is restored when he gazes at a star twinkling far above the forsaken land.",
+            "images": [{
+                    "image_id": "701",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "702",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "703",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "704",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "705",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1008",
+            "phrase": "\"Arise, arise, Riders of Théoden!\"",
+            "character": "Théoden",
+            "page": "838",
+            "description": "With these stirring words, King Théoden of Rohan rallies the Rohirrim before leading them in a mighty charge upon the Pelennor Fields.",
+            "images": [{
+                    "image_id": "801",
+                    "description": "Earliest handwritten sketch (line not yet present)",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "802",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "803",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "804",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "805",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1009",
+            "phrase": "\"I don't know half of you half as well as I should like; and I like less than half of you half as well as you deserve.\"",
+            "character": "Bilbo",
+            "page": "30",
+            "description": "In the first chapter of The Lord of the Rings, Bilbo Baggins delivers this clever line to the guests at his Birthday Party, leaving most of the hobbits bewildered and wondering if it was meant as a compliment.",
+            "images": [{
+                    "image_id": "901",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "902",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "903",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "904",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "905",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "906",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1010",
+            "phrase": "\"And then wonder took him, and a great joy; and he cast his sword up in the sunlight and sang as he caught it.\"",
+            "character": "Narrator",
+            "page": "847",
+            "description": "In this beautiful moment of eucatastrophe—a term Tolkien coined for the sudden turning from despair to joy that marked the best fairy-stories—the embattled Éomer of Rohan realizes that the black ships approaching Minas Tirith contain allies, not foes, and are led by his friend Aragorn. The King has returned to Gondor!",
+            "images": [{
+                    "image_id": "1001",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1002",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1003",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1004",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1005",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1006",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1011",
+            "phrase": "\"Yet it is not our part to master all the tides of the world, but to do what is in us for the succour of those years wherein we are set, uprooting the evil in the fields that we know, so that those who live after may have clean earth to till.\"",
+            "character": "Gandalf",
+            "page": "879",
+            "description": "Gandalf imparts this wisdom during the chapter “The Last Debate” as the Lords of the West decide their next move after their victory on the Pelennor Fields.",
+            "images": [{
+                    "image_id": "1101",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1102",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1103",
+                    "description": "Handwritten draft III",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1104",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1105",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1106",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        },
+        {
+            "id": "1012",
+            "phrase": "\"[T]he grey rain-curtain turned all to silver glass and was rolled back, and he beheld white shores and beyond them a far green country under a swift sunrise.\"",
+            "character": "Narrator",
+            "page": "1030",
+            "description": "In the closing paragraphs of The Lord of the Rings, readers receive a glimpse of the Undying Lands, where the hobbit Ringbearers will find rest and healing.",
+            "images": [{
+                    "image_id": "1201",
+                    "description": "Earliest handwritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1202",
+                    "description": "Handwritten draft II",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1203",
+                    "description": "Typewritten draft",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1204",
+                    "description": "Typescript sent to printer",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                },
+                {
+                    "image_id": "1205",
+                    "description": "Galley proof",
+                    "type": "image",
+                    "url": "m1.jpg",
+                    "visible": true
+                }
+            ]
+        }
+    ]
+}

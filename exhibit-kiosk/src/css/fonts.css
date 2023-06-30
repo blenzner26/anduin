@@ -1,0 +1,10 @@
+/* Created by Brendan Lenzner, Raynor Memorial Libraries - Marquette University
+   Modified 7/27/2022 */
+
+@font-face {
+    font-family: 'albertus_mt';
+    src: url('/src/css/fonts/albertus_mt1-webfont.woff2') format('woff2'),
+         url('/src/css/fonts/albertus_mt1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

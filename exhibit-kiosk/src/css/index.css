@@ -1,0 +1,28 @@
+/* Created by Brendan Lenzner, Raynor Memorial Libraries - Marquette University
+   Modified 7/27/2022 */
+
+@import url('/src/css/fonts.css');
+
+body {
+  margin: 5px;
+  font-family: 'albertus_mt', Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  height: 100%;
+  background: linear-gradient( rgba(10, 10, 10, 0.3), rgba(40, 40, 40, 0.3) ), url('/src/images/background.jpg');
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr {
+  border: 1px solid #656565;
+  margin: 20px auto;
+}
+
+#root {
+  margin-top: 3%;
+}

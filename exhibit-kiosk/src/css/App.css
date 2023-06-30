@@ -1,0 +1,43 @@
+/* Created by Brendan Lenzner, Raynor Memorial Libraries - Marquette University
+   Modified 7/27/2022 */
+
+.manuscript-modal > div:nth-child(3) {
+  background-color: #222;
+}
+#toolbar{
+  position: absolute !important;
+}
+
+#toolbar > div > div:nth-child(3) > div {
+  position: absolute !important;
+  top: 325px;
+}
+
+#toolbar > div > div:nth-child(3) > div > div {
+  display: flex !important;
+  flex-direction: column;
+}
+.white-outline {
+  border-color: #ffffff !important;
+}
+.dark-outline {
+  border-color: #555555 !important;
+}
+
+.highlight{
+  opacity: 0.3;
+  filter: alpha(opacity=40);
+  outline: 12px auto blue;
+  background-color: yellow;
+}
+
+.galley-sheet{
+  outline: 12px auto #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+  content: "Galley Sheet";
+}
+
+span.MuiTypography-root.MuiFormControlLabel-label.MuiTypography-body1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
